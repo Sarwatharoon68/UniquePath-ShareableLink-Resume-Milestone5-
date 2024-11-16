@@ -1,0 +1,51 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Path And Shareable Link Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Unique Path And Shareable Link Resume </h1>
+        <form id="resumeForm">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+           </fieldset>
+
+            <fieldset>
+        <legend>Details</legend>
+        <label for="education">Education (use new lines for separate points):</label>
+        <textarea id="education" name="education" rows="3"  required></textarea>
+
+        <label for="skills">Skills (comma-separated):</label>
+        <textarea id="skills" name="skills" rows="3" required></textarea>
+
+        <label for="experience">Experience (use new lines for separate points):</label>
+        <textarea id="experience" name="experience" rows="3"  required></textarea>
+
+
+        <label for="languages">Languages (comma-separated):</label>
+        <textarea id="languages" name="languages" rows="3" required></textarea>
+
+        </fieldset>
+
+        <button type="submit" class="btn-secondary">Generate Resume</button>
+        </form>
+        <div id="resumePreview" class="hidden">
+            <div id="resumeOutput"></div>
+            <button id="downloadBtn" class="btn-primary">Download as PDF</button>
+            <button id="generateLinkBtn" class="btn-primary">Generate Shareable Link</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html> 
+  
